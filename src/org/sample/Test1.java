@@ -12,9 +12,7 @@ public class Test1 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://greenstech.in/selenium-course-content.html");
 		driver.manage().window().maximize();
-		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		
 		WebElement scrolldown = driver.findElement(By.xpath("(//a[text()='greenstechnologyomrleads@gmail.com'])[7]"));
 		js.executeScript("arguments[0].scrollIntoView(true)", scrolldown);
 		Thread.sleep(3000);
